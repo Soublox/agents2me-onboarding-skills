@@ -5,7 +5,7 @@ O resultado é o **prompt da empresa**. O hub do agents2.me já tem um prompt ma
 ## Blocos (uma pergunta por vez; grave cada bloco em respostas.md)
 
 1. **Negócio** — o que a empresa faz e vende; para quem; horário de atendimento; site e links úteis.
-2. **Canais** — com MCP, mostre os canais de `list_channels` e pergunte se falta algum e se o bot atende todos ou só alguns. Sem MCP, pergunte quais usa (WhatsApp, Instagram, Webchat...).
+2. **Canais e workspace** — com MCP, mostre os canais de `list_channels` e pergunte se falta algum e se o bot atende todos ou só alguns. Depois mostre os workspaces de `list_agent_workspaces` e pergunte qual o bot usa (com um só, proponha esse). Nenhum workspace → item `[M]`: criar o workspace no chatt2.me Hub e ligá-lo aos canais. Sem MCP, pergunte quais canais usa (WhatsApp, Instagram, Webchat...).
 3. **Tom de voz** — formal ou informal; você/senhor(a); emojis (nunca/às vezes/frequente); respostas curtas ou detalhadas. Peça **2 ou 3 mensagens reais** que a empresa já mandou e gosta, e **1** que não quer que o bot mande.
 4. **O que o bot resolve** — dúvidas frequentes com as respostas; preços; políticas (troca, prazo, frete, cancelamento); agendamento. Para cada item, de onde vem a resposta (texto colado, link, "não sei" → bot transfere).
 5. **Regras do negócio e transferência** — o que o bot nunca faz (desconto, prometer prazo, falar de concorrente...); quando passa para um humano; a frase de transferência; o que coletar antes (nome, pedido, motivo).
@@ -58,4 +58,9 @@ Pergunte: "Está no tom certo?" Ajuste e regere até aprovar.
 
 ## Entrega
 
-O prompt é sempre colado manualmente: Configurações → Integrações → Chatt2me Hub → canal → configurações do agente (prompt da empresa). Registre como item `[M]` no plano.
+O prompt vai para o campo **Instruções** do workspace escolhido no bloco 2.
+
+- **Com MCP e workspace escolhido:** registre no plano `[ ] atualizar instruções do workspace "<nome>" (N / 5000)`. Se o workspace já tem instruções, avise que serão substituídas e mostre as primeiras linhas do texto atual. Instruções atuais iguais ao prompt → `[-]`.
+- **Sem MCP ou sem workspace:** item `[M]`: Configurações → Integrações → chatt2.me Hub → canal → link "Configurar Workspace" → campo Instruções.
+
+Ligar o canal ao workspace (dropdown "Workspace de conhecimento" na mesma tela) não tem ferramenta no MCP: se o canal ainda não aponta para o workspace, registre também um `[M]`.

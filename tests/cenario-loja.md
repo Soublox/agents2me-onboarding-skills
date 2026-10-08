@@ -4,6 +4,7 @@ Use estas respostas ao rodar a skill.
 
 - **Empresa:** Bella Moda — loja de roupas femininas online e uma loja física em Campinas. Público: mulheres 25-45. Horário: seg-sex 9h-18h, sáb 9h-13h. Site: bellamoda.com.br
 - **Canais:** WhatsApp e Instagram; o bot atende os dois.
+- **Workspace:** o workspace do hub da loja (no modo MCP, escolha o que `list_agent_workspaces` mostrar; o prompt vai para as instruções dele).
 - **Tom:** informal, "você", emojis às vezes, respostas curtas.
   - Boa: "Oi, Ju! 💛 Seu pedido saiu hoje, o código de rastreio é BR123. Qualquer coisa me chama!"
   - Boa: "Temos sim no P e no M! Quer que eu separe pra você?"

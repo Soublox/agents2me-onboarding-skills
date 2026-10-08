@@ -13,7 +13,7 @@ Use o mesmo `plano.md`, com todos os itens `[M]`, na ordem de `aplicacao.md`. Ca
 | Filas | Configurações → Filas (`/settings/queues/new`) |
 | Mensagens rápidas | Configurações → Mensagens rápidas (`/settings/quick-replies/new`) |
 | Relatórios | Relatórios (`/reports`) → Novo → escolha o tipo e siga a receita |
-| System prompt | Configurações → Integrações → Chatt2me Hub → canal → configurações do agente |
+| System prompt | Configurações → Integrações → chatt2.me Hub → canal → link "Configurar Workspace" (acima de "Workspace de conhecimento") → cole em **Instruções** (máx. 5000) → Salvar. Confira se o canal usa esse workspace no dropdown |
 
 Formato de cada item:
 

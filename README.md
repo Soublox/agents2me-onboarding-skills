@@ -21,6 +21,6 @@ Peça: "quero implantar o agents2.me". Os arquivos ficam em `onboarding/<empresa
 ## Testes (manuais)
 
 1. **Modo manual:** sem MCP, responda com `tests/cenario-loja.md`. Confira: `plano.md` com todos os itens `[M]` e caminho na tela; `system-prompt.md` ≤ 5000 caracteres (`wc -m`) e sem regras genéricas de segurança.
-2. **Modo MCP:** empresa nova em dev, mesmo cenário. Confira na tela; rode de novo — tudo deve sair `[-]`.
+2. **Modo MCP:** empresa nova em dev (hub conectado, com um workspace), mesmo cenário. Confira na tela, incluindo "Configurar Workspace" do canal: Instruções = `system-prompt.md` sem a linha de contagem, nome do workspace intacto. Rode de novo — tudo deve sair `[-]`.
 3. **Retomada:** interrompa no meio da Etapa 2, abra nova sessão, peça para continuar.
 4. **Portabilidade:** instale no Claude Code e no Codex ou OpenCode; a skill deve aparecer e iniciar.

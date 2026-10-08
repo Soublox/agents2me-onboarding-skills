@@ -40,7 +40,8 @@ Atualize a linha no `plano.md` logo após cada chamada. Se um item falhar: `[!] 
 | 7 | Filas | `create_queue` / `update_queue`, `add_queue_member` | `memberIds`, `tagIds`, `channelIds`; `hubQueueSyncError` → anote `[x] (aviso: sync hub)` |
 | 8 | Mensagens rápidas | `create_quick_reply` / `update_quick_reply` | |
 | 9 | Relatórios | `create_report` (folder "Gestão"), `describe_report_type`, `create_report` (report, `parentId` da pasta), `save_report_config`, `share_report` | veja abaixo |
-| 10 | Manuais | — | system prompt + itens `[!]` |
+| 10 | Instruções do bot | `update_agent_workspace` | `workspaceId` + `instructions` = `system-prompt.md` **sem** a linha `<!-- caracteres: … -->`; não passe `name` nem `description` (ficam como estão); confira o tamanho de `instructions` retornado |
+| 11 | Manuais | — | itens `[M]` (criar workspace, ligar canal ao workspace) e `[!]` |
 
 ### Relatórios
 Para cada receita: `describe_report_type` do tipo → escolha os campos reais que correspondem a "agrupar por" e "medida" → `save_report_config` com groups, columns e `chart` → confira a amostra retornada. Se nenhum campo corresponder, marque `[!] campo não encontrado` e deixe a receita para o manual. Compartilhe com `share_report` passando os `userIds` de quem deve ver (usuários com papel Supervisor/Administrador em `list_users` + `list_roles`) — `role: true` compartilha apenas com o papel de quem está conectado.

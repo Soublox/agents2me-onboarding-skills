@@ -1,6 +1,6 @@
 ---
 name: agents2me-onboarding
-description: Implanta o agents2.me para uma empresa — entrevista sobre canais, tom de voz e atendimento, gera o system prompt da empresa para o bot e configura tags, filas, mensagens rápidas, campos customizados, funcionalidades, papéis, usuários, funil de oportunidades e relatórios via MCP do agents2.me (ou gera uma lista de tarefas manuais). Use quando o usuário quiser implantar, configurar ou fazer o onboarding do agents2.me.
+description: Implanta o agents2.me para uma empresa — entrevista sobre canais, tom de voz e atendimento, gera o system prompt da empresa para o bot (gravado nas instruções do workspace do hub) e configura tags, filas, mensagens rápidas, campos customizados, funcionalidades, papéis, usuários, funil de oportunidades e relatórios via MCP do agents2.me (ou gera uma lista de tarefas manuais). Use quando o usuário quiser implantar, configurar ou fazer o onboarding do agents2.me.
 ---
 
 # Implantação agents2.me
@@ -36,7 +36,7 @@ Sem ferramenta de arquivo? Mostre o conteúdo de cada arquivo em bloco de códig
    - Funcionou → mostre "Conectado como <nome> (<email>), papel <papel>" e pergunte se é a empresa certa. Se não for, peça para reconectar o MCP do agents2.me com a conta da empresa certa e pare.
    - Ferramenta inexistente ou erro → **modo manual**. Avise: "Sem o MCP, no final vou entregar uma lista de tarefas para fazer na tela do agents2.me." Para conectar depois: Configurações → Apps conectados no agents2.me.
 3. Pergunte o perfil: (1) sou da empresa / (2) sou implantador/parceiro.
-4. Com MCP, leia: `list_channels`, `list_users`, `list_roles`, `list_tags`, `list_queues`, `list_quick_replies`, `list_custom_fields` (entity `contacts`), `get_company_features`; se opportunities ligado, `list_opportunity_stages`. Grave um resumo em `respostas.md` (`## Etapa 0 / Estado atual`).
+4. Com MCP, leia: `list_channels`, `list_users`, `list_roles`, `list_tags`, `list_queues`, `list_quick_replies`, `list_custom_fields` (entity `contacts`), `get_company_features`, `list_agent_workspaces`; se opportunities ligado, `list_opportunity_stages`. Grave um resumo (para cada workspace: nome e se já tem instruções) em `respostas.md` (`## Etapa 0 / Estado atual`).
 
 ## Etapa 1 — Bot e system prompt
 Leia `references/entrevista-bot.md` e siga.
@@ -52,4 +52,4 @@ Leia `references/aplicacao.md` e siga. No modo manual, use também `references/t
 
 ## Fim
 
-Mostre o resumo (criados, atualizados, pulados, falhas, manuais) e lembre o usuário de colar o `system-prompt.md` no bot — sempre manual.
+Mostre o resumo (criados, atualizados, pulados, falhas, manuais) e diga onde ficou o `system-prompt.md`: gravado nas instruções do workspace (MCP) ou a colar manualmente (item `[M]`). Lembre que ligar o canal ao workspace é feito na tela do canal.
