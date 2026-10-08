@@ -5,6 +5,7 @@ Use o mesmo `plano.md`, com todos os itens `[M]`, na ordem de `aplicacao.md`. Ca
 | Item | Onde no agents2.me |
 |---|---|
 | Funcionalidades (Contas, Oportunidades, CX Score, Conversa interna) | Configurações → Geral |
+| Nomes das entidades | Configurações → Nomes das entidades (`/settings/entity-names`) — escolha o idioma, preencha singular e plural, Salvar |
 | Etapas do funil | Com Oportunidades: Configurações → Geral → Oportunidades → Etapas. Sem: Configurações → Campos de contatos → Novo → tipo combobox "Etapa do funil" com as etapas como opções |
 | Campos de contatos / contas / oportunidades | Configurações → Campos de contatos (`/settings/contacts-custom-fields`), de contas (`/settings/accounts-custom-fields`), de oportunidades (`/settings/opportunities-custom-fields`) |
 | Papéis | Configurações → Papéis (`/settings/roles/new`) — marque as permissões da matriz |

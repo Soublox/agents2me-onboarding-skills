@@ -14,6 +14,7 @@ Use estas respostas ao rodar a skill.
 - **Fora do horário:** "Estamos fora do horário, mas já anotei! Amanhã cedo a equipe te responde." Coletar nome e motivo.
 - **Equipe:** Carla (carla@bellamoda.test, supervisora), Ju (ju@bellamoda.test, atendente), Rafa (rafa@bellamoda.test, atendente e vendas).
 - **Funcionalidades:** Contas não; Oportunidades sim (vendas para atacado); CX Score sim; conversa interna sim.
+- **Nomes das entidades:** Oportunidade → Pedido / Pedidos (pt); Contato mantém. Na variante sem Oportunidades, só Contato aparece — responda "mantém".
 - **Funil:** Contato → Catálogo enviado → Pedido montado → Pagamento → Ganha / Perdida.
 - **Variante sem Oportunidades** (rodar uma vez no modo manual): responda "Oportunidades não" — o funil deve virar o campo combobox "Etapa do funil" nos contatos.
 - **Filas:** Vendas (WhatsApp + Instagram; Rafa, Carla), Pós-venda (WhatsApp; Ju, Carla).

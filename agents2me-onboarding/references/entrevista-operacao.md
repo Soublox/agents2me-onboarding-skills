@@ -25,25 +25,31 @@ Uma por vez, com uma frase e uma recomendação:
 - **CX Score** — nota de experiência dada por IA a cada conversa finalizada. Recomende se quer medir qualidade.
 - **Conversa interna** — chat entre atendentes dentro do agents2.me. Recomende se a equipe tem mais de 2 pessoas.
 
-## 4. Etapas do funil
+## 4. Nomes das entidades
+Pergunte se a equipe chama **Conta**, **Contato** ou **Oportunidade** de outro jeito e proponha a partir da Etapa 1 (ex.: clínica → Conta = Paciente, Oportunidade = Contrato; escola → Conta = Aluno). Só pergunte pelas entidades ligadas no bloco 3; Contato sempre aparece. "Contato" aqui é o cadastro do CRM, não a pessoa que conversa no chat.
+Para cada nome novo: **singular e plural**, até 40 caracteres, sem `{` `}`. Nome padrão é mantido — não grave nada para ele.
+Idioma: o da empresa. Pergunte por en/es só se a equipe usa o agents2.me nesses idiomas.
+Explique: "o nome muda para toda a empresa: menu, telas, relatórios e exportações". Daqui em diante, use os nomes escolhidos nas perguntas (ex.: "etapas do funil de Contratos").
+
+## 5. Etapas do funil
 Pergunte se a empresa acompanha o cliente por etapas (ex.: contato → orçamento → fechado). Se não, pule.
 Pergunte: "o que acontece entre o primeiro contato e o fechamento?"
 
 **Oportunidades ligado** — padrão do sistema: Prospecção (open, 10%), Qualificação (open, 25%), Proposta (open, 50%), Negociação (open, 75%), Ganha (won, 100%), Perdida (lost, 0%).
 Proponha a lista ordenada com nome, categoria (`open`/`won`/`lost`) e probabilidade (%). Mantenha pelo menos uma `open`, uma `won` e uma `lost`. Marque cada etapa padrão como manter / renomear / remover.
 
-**Oportunidades desligado** — o funil vira um campo de **contato** do tipo `combobox`, nome sugerido "Etapa do funil", com as etapas como `options` na ordem do processo (sem categoria nem probabilidade). Explique: "dá para ver os contatos em Kanban agrupados por esse campo". Grave junto com os campos customizados (bloco 8).
+**Oportunidades desligado** — o funil vira um campo de **contato** do tipo `combobox`, nome sugerido "Etapa do funil", com as etapas como `options` na ordem do processo (sem categoria nem probabilidade). Explique: "dá para ver os contatos em Kanban agrupados por esse campo". Grave junto com os campos customizados (bloco 9).
 
-## 5. Filas
+## 6. Filas
 Setores ou assuntos (ex.: Vendas, Suporte, Financeiro); canais de cada fila; membros. Sugira a partir dos motivos de contato da Etapa 1.
 
-## 6. Tags
+## 7. Tags
 Derive dos motivos de contato e do FAQ (ex.: Orçamento, Troca, Rastreio, Reclamação). Para cada: cor (hex) e quem usa (todos, ou uma lista).
 
-## 7. Mensagens rápidas
+## 8. Mensagens rápidas
 Proponha: saudação, pedido de dados, horário de atendimento, encerramento e uma por FAQ importante. Para cada: atalho (`/saudacao`), tipo (`text`, `button`, `list`, `cta`, `payment`), texto. Use variáveis onde fizer sentido: `{{first_name}}`, `{{full_name}}`, `{{contact.<campo>}}`.
 
-## 8. Campos customizados
+## 9. Campos customizados
 O que a equipe precisa registrar sobre contatos (CPF, plano, cidade...). Tipo de cada um (texto, número, data, combobox com opções...). Se Contas/Oportunidades ligados, pergunte também para essas entidades.
 
 ## Fora do escopo
