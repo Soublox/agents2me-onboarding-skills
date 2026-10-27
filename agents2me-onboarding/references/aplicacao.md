@@ -6,13 +6,15 @@ Agrupe por tipo, na ordem de aplicação abaixo. Cada linha: status, ação, alv
 
 ```
 ## 1. Funcionalidades
-- [ ] ligar Oportunidades (liga Contas)
+- [ ] ligar Oportunidades
 ## 2. Nomes das entidades (pt)
 - [ ] Oportunidade → Pedido / Pedidos
 ## 6. Usuários  ⚠️ cada um recebe convite por e-mail
 - [ ] criar Ana Souza <ana@loja.com> — papel Atendente
 - [-] João <joao@loja.com> — já existe
 ```
+
+Contas e Oportunidades são independentes: cada uma vira linha própria, só se escolhida (ex.: `ligar Contas`). Ligar uma não liga a outra.
 
 Ações: **criar**, **atualizar** (existe com diferença — diga qual), **pular** `[-]` (existe igual), **remover** (só etapas do funil), **manual** `[M]`.
 
@@ -37,7 +39,7 @@ Atualize a linha no `plano.md` logo após cada chamada. Se um item falhar: `[!] 
 | 1 | Funcionalidades | `update_company_features` | uma chamada com todas; confira o estado retornado |
 | 2 | Nomes das entidades | `get_entity_labels`, `update_entity_labels` | uma chamada por idioma, só com as entidades que mudam (`{ singular, plural }`); `null` volta ao padrão; confira `configured` retornado |
 | 3 | Etapas do funil | `list_opportunity_stages`, `update_opportunity_stage`, `create_opportunity_stage`, `delete_opportunity_stage`, `reorder_opportunity_stages` | só com Oportunidades ligado: renomeie/reaproveite padrão → crie → remova → reordene com todos os ids |
-| 4 | Campos customizados | `create_custom_field` / `update_custom_field` | entity `contacts`, `accounts`, `opportunities`; sem Oportunidades, o funil entra aqui: entity `contacts`, `fieldType: "combobox"`, `options` = etapas em ordem (já existe com outras opções → atualizar `options`) |
+| 4 | Campos customizados | `create_custom_field` / `update_custom_field` | entity `contacts`, `accounts` (só com Contas ligada), `opportunities`; sem Oportunidades, o funil entra aqui: entity `contacts`, `fieldType: "combobox"`, `options` = etapas em ordem (já existe com outras opções → atualizar `options`) |
 | 5 | Papéis | `list_roles`, `create_role` / `update_role` | copie a matriz de um papel existente e ajuste |
 | 6 | Usuários | `create_user` | `roleId` do passo 5 |
 | 7 | Tags | `create_tag` / `update_tag` | `userIds` de `list_users` |

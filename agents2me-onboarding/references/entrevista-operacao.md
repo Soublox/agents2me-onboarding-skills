@@ -16,14 +16,16 @@ Montagem da matriz: copie as `permissions` de um papel de `list_roles` e ajuste.
 | Atendente | dashboard, inbox, contacts | quickReplies, tags | — |
 | Vendedor | dashboard, inbox, contacts, accounts, opportunities | quickReplies, tags | — |
 
-Só ofereça Vendedor se Oportunidades for ligado. Se `create_role` responder `role_exceeds_caller`, remova o excesso ou peça para um Administrador rodar.
+Só ofereça Vendedor se Oportunidades for ligado. `accounts` só entra se Contas estiver ligada. Se `create_role` responder `role_exceeds_caller`, remova o excesso ou peça para um Administrador rodar.
 
 ## 3. Funcionalidades
 Uma por vez, com uma frase e uma recomendação:
 - **Contas** — agrupar contatos por empresa cliente (B2B). Recomende se vende para empresas.
-- **Oportunidades** — funil de vendas com etapas e valores; liga Contas junto. Recomende se há venda consultiva.
+- **Oportunidades** — funil de vendas com etapas e valores. Funciona com ou sem Contas: sem Contas (B2C), cada oportunidade fica ligada a um contato. Recomende se há venda consultiva.
 - **CX Score** — nota de experiência dada por IA a cada conversa finalizada. Recomende se quer medir qualidade.
 - **Conversa interna** — chat entre atendentes dentro do agents2.me. Recomende se a equipe tem mais de 2 pessoas.
+
+Linha de recomendação: "Vende para pessoas com venda consultiva → Oportunidades ligado, Contas desligado."
 
 ## 4. Nomes das entidades
 Pergunte se a equipe chama **Conta**, **Contato** ou **Oportunidade** de outro jeito e proponha a partir da Etapa 1 (ex.: clínica → Conta = Paciente, Oportunidade = Contrato; escola → Conta = Aluno). Só pergunte pelas entidades ligadas no bloco 3; Contato sempre aparece. "Contato" aqui é o cadastro do CRM, não a pessoa que conversa no chat.
