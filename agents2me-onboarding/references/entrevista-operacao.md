@@ -52,7 +52,7 @@ Derive dos motivos de contato e do FAQ (ex.: Orçamento, Troca, Rastreio, Reclam
 Proponha: saudação, pedido de dados, horário de atendimento, encerramento e uma por FAQ importante. Para cada: atalho (`/saudacao`), tipo (`text`, `button`, `list`, `cta`, `payment`), texto. Use variáveis onde fizer sentido: `{{first_name}}`, `{{full_name}}`, `{{contact.<campo>}}`.
 
 ## 9. Campos customizados
-O que a equipe precisa registrar sobre contatos (CPF, plano, cidade...). Tipo de cada um (texto, número, data, combobox com opções...). Se Contas/Oportunidades ligados, pergunte também para essas entidades.
+O que a equipe precisa registrar sobre contatos (CPF, plano, cidade...). Tipo de cada um (texto, número, data, combobox com opções...). Se Contas estiver ligada, pergunte também pelos campos de conta; se Oportunidades estiver ligado, pelos campos de oportunidade. Cada entidade só se ligada.
 
 ## Fora do escopo
 Campanhas, listas (views), templates de WhatsApp e conexão de canais: se o usuário pedir, registre como item `[M]` no plano.

@@ -13,7 +13,7 @@ Use estas respostas ao rodar a skill.
 - **Regras:** nunca dar desconto; nunca prometer data de entrega; transferir reclamação e pedido de troca com defeito. Coletar nome e número do pedido. Frase: "Vou te passar para alguém da equipe, só um minutinho!"
 - **Fora do horário:** "Estamos fora do horário, mas já anotei! Amanhã cedo a equipe te responde." Coletar nome e motivo.
 - **Equipe:** Carla (carla@bellamoda.test, supervisora), Ju (ju@bellamoda.test, atendente), Rafa (rafa@bellamoda.test, atendente e vendas).
-- **Funcionalidades:** Contas não; Oportunidades sim, sem Contas (B2C): cada oportunidade fica ligada ao contato principal (vendas para atacado); CX Score sim; conversa interna sim.
+- **Funcionalidades:** Contas não; Oportunidades sim, sem Contas (B2C): cada oportunidade fica ligada ao contato principal; CX Score sim; conversa interna sim. A loja vende para pessoas (varejo, B2C): se houver venda consultiva → Oportunidades ligado, Contas desligado. Clientes de atacado (campo "Cliente atacado", tag "Atacado") são B2B: para esses, Contas seria recomendada.
 - **Nomes das entidades:** Oportunidade → Pedido / Pedidos (pt); Contato mantém. Na variante sem Oportunidades, só Contato aparece — responda "mantém".
 - **Funil:** Contato → Catálogo enviado → Pedido montado → Pagamento → Ganha / Perdida.
 - **Variante sem Oportunidades** (rodar uma vez no modo manual): responda "Oportunidades não" — o funil deve virar o campo combobox "Etapa do funil" nos contatos.
