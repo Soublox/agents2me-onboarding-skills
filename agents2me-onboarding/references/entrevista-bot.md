@@ -14,7 +14,7 @@ O resultado é o **prompt da empresa**. O hub do agents2.me já tem um prompt ma
 ## Montagem do system-prompt.md
 
 ```
-<!-- caracteres: N / 5000 -->
+<!-- caracteres: N / 10000 -->
 # Identidade
 Você é <nome do bot>, atendente virtual da <empresa>, que <o que faz> para <público>.
 
@@ -38,14 +38,14 @@ Transfira para um atendente quando: <condições>. Antes, colete: <dados>. Diga:
 Horário: <horário>. Fora dele: <resposta>; colete <dados>.
 ```
 
-## Limite de 5000 caracteres
+## Limite de 10000 caracteres
 
 1. Conte: com shell, `wc -m < onboarding/<empresa>/system-prompt.md`; sem shell, conte você mesmo e arredonde para cima.
-2. Acima de 5000, corte nesta ordem e reconte a cada corte:
+2. Acima de 10000, corte nesta ordem e reconte a cada corte:
    1. Exemplos de tom: deixe 1 bom e 1 ruim.
    2. FAQs menos frequentes: troque por link quando houver; senão remova as menos citadas.
    3. Condense as regras do negócio (frases curtas, sem repetição).
-3. Atualize o comentário da primeira linha com o total. Nunca entregue acima de 5000.
+3. Atualize o comentário da primeira linha com o total. Nunca entregue acima de 10000.
 
 ## Teste rápido
 
@@ -60,7 +60,7 @@ Pergunte: "Está no tom certo?" Ajuste e regere até aprovar.
 
 O prompt vai para o campo **Instruções** do workspace escolhido no bloco 2.
 
-- **Com MCP e workspace escolhido:** registre no plano `[ ] atualizar instruções do workspace "<nome>" (N / 5000)`. Se o workspace já tem instruções, avise que serão substituídas e mostre as primeiras linhas do texto atual. Instruções atuais iguais ao prompt → `[-]`.
+- **Com MCP e workspace escolhido:** registre no plano `[ ] atualizar instruções do workspace "<nome>" (N / 10000)`. Se o workspace já tem instruções, avise que serão substituídas e mostre as primeiras linhas do texto atual. Instruções atuais iguais ao prompt → `[-]`.
 - **Sem MCP ou sem workspace:** item `[M]`: Configurações → Integrações → chatt2.me Hub → canal → link "Configurar Workspace" → campo Instruções.
 
 Ligar o canal ao workspace (dropdown "Workspace de conhecimento" na mesma tela) não tem ferramenta no MCP: se o canal ainda não aponta para o workspace, registre também um `[M]`.
