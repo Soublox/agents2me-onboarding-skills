@@ -1,6 +1,6 @@
 # agents2.me — Skill de Implantação
 
-Skill que entrevista você, gera o system prompt do seu bot e configura o agents2.me (tags, filas, mensagens rápidas, campos, funcionalidades, papéis, usuários, funil e relatórios).
+Skill que entrevista você, gera o system prompt do seu bot e configura o agents2.me (tags, filas, mensagens rápidas, campos, funcionalidades — inclusive Tarefas e Compromissos —, nomes das entidades, papéis, usuários, funil e relatórios).
 
 ## Pré-requisito: MCP do agents2.me
 

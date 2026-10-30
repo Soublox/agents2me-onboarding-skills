@@ -1,6 +1,6 @@
 ---
 name: agents2me-onboarding
-description: Implanta o agents2.me para uma empresa — entrevista sobre canais, tom de voz e atendimento, gera o system prompt da empresa para o bot (gravado nas instruções do workspace do hub) e configura tags, filas, mensagens rápidas, campos customizados, funcionalidades, nomes das entidades (ex.: Conta → Paciente), papéis, usuários, funil de oportunidades e relatórios via MCP do agents2.me (ou gera uma lista de tarefas manuais). Use quando o usuário quiser implantar, configurar ou fazer o onboarding do agents2.me.
+description: Implanta o agents2.me para uma empresa — entrevista sobre canais, tom de voz e atendimento, gera o system prompt da empresa para o bot (gravado nas instruções do workspace do hub) e configura tags, filas, mensagens rápidas, campos customizados, funcionalidades (inclusive Tarefas e Compromissos, com agendas), nomes das entidades (ex.: Conta → Paciente, Compromisso → Sessão), papéis, usuários, funil de oportunidades e relatórios via MCP do agents2.me (ou gera uma lista de tarefas manuais). Use quando o usuário quiser implantar, configurar ou fazer o onboarding do agents2.me.
 ---
 
 # Implantação agents2.me
@@ -36,7 +36,7 @@ Sem ferramenta de arquivo? Mostre o conteúdo de cada arquivo em bloco de códig
    - Funcionou → mostre "Conectado como <nome> (<email>), papel <papel>" e pergunte se é a empresa certa. Se não for, peça para reconectar o MCP do agents2.me com a conta da empresa certa e pare.
    - Ferramenta inexistente ou erro → **modo manual**. Avise: "Sem o MCP, no final vou entregar uma lista de tarefas para fazer na tela do agents2.me." Para conectar depois: Configurações → Apps conectados no agents2.me.
 3. Pergunte o perfil: (1) sou da empresa / (2) sou implantador/parceiro.
-4. Com MCP, leia: `list_channels`, `list_users`, `list_roles`, `list_tags`, `list_queues`, `list_quick_replies`, `list_custom_fields` (entity `contacts`), `get_company_features`, `get_entity_labels`, `list_agent_workspaces`; se opportunities ligado, `list_opportunity_stages`. Grave um resumo (para cada workspace: nome e se já tem instruções; nomes das entidades já configurados) em `respostas.md` (`## Etapa 0 / Estado atual`).
+4. Com MCP, leia: `list_channels`, `list_users`, `list_roles`, `list_tags`, `list_queues`, `list_quick_replies`, `list_custom_fields` (entity `contacts`; e `accounts`, `opportunities`, `tasks`, `events` para cada recurso ligado), `get_company_features`, `get_entity_labels`, `list_agent_workspaces`; se opportunities ligado, `list_opportunity_stages`. Grave um resumo (para cada workspace: nome e se já tem instruções; nomes das entidades já configurados) em `respostas.md` (`## Etapa 0 / Estado atual`).
 
 ## Etapa 1 — Bot e system prompt
 Leia `references/entrevista-bot.md` e siga.

@@ -14,6 +14,10 @@
 | 7 | Funil de oportunidades | opportunities | etapa | soma do valor | funnel | Oportunidades ligado |
 | 8 | Ganho x perdido por vendedor | opportunities | dono, categoria da etapa | soma do valor | bar | Oportunidades ligado |
 | 9 | Mensagens enviadas por atendente | messages | atendente | contagem | bar | — |
+| 10 | Tarefas vencidas por responsável | tasks | responsável | contagem (filtro: vencida) | bar | Tarefas ligado |
+| 11 | Tarefas concluídas por responsável no mês | tasks | responsável | contagem (filtro: concluída este mês) | column | Tarefas ligado |
+| 12 | Compromissos por status | events | status | contagem | donut | Compromissos ligado |
+| 13 | Faltas (não compareceu) por responsável | events | responsável | contagem (filtro: status não compareceu) | bar | Compromissos ligado; recomende para clínicas |
 
 3. Pergunte quem vê os relatórios (padrão: Supervisores e Administradores).
 4. Grave em `respostas.md` (`## Etapa 3 / Relatórios`) cada relatório como receita: nome, tipo, agrupar por, medida, filtro, gráfico, quem vê.
